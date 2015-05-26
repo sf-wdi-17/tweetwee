@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tweeter</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.js"></script>
+	<script src="app.js"></script>
+	<base href="/">
+</head>
+<body ng-app="myApp">
+	<div ng-controller="NavCtrl">
+		<span>{{nav}}</span>
+		<a href="/user/mike">Mike</a>
+		<a href="/user/del">Del</a>
+		<a href="/user/brett">Brett</a>
+		<a href="/tweet/1">tweet 1</a>
+	</div>
+	<div ng-view></div>
+</body>
+</html>

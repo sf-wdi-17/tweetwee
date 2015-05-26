@@ -1,0 +1,14 @@
+<div>
+	<h1>Tweet Page</h1>
+	<form ng-submit="newTweet()">
+		<input type="text" ng-model="tweeter" placeholder="username">
+		<input type="text" ng-model="content" placeholder="tweet">
+		<button type="submit">Tweet</button>
+	</form>
+
+	<ul>
+		<li ng-repeat="theTweet in tweets">
+			{{theTweet.tweeter}}, {{theTweet.content}}
+		</li>
+	</ul>
+</div>
